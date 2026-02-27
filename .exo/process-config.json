@@ -1,0 +1,124 @@
+{
+  "name": "ExoWork Onboarding",
+  "description": "Get comfortable with ExoWork by completing a small project setup",
+  "phases": [
+    {
+      "id": "phase-checklist-basics",
+      "name": "Getting Oriented",
+      "description": "Familiarize yourself with the workspace and checklist",
+      "blocking": true,
+      "steps": [
+        {
+          "id": "mark-complete",
+          "name": "Check off this task",
+          "description": "Click the circle to the left — this is how you track progress on any checklist",
+          "actionType": "manual"
+        },
+        {
+          "id": "expand-collapse",
+          "name": "Browse the stages below",
+          "description": "Click on the stage header above 'Getting Oriented' to collapse or expand it",
+          "actionType": "manual"
+        },
+        {
+          "id": "upload-brief",
+          "name": "Upload a sample document(s)",
+          "description": "Upload any file (agent can read Text, PDF, Images, screenshot, etc.)",
+          "actionType": "upload",
+          "uploadPath": "uploads"
+        },
+        {
+          "id": "summarize-file",
+          "name": "Summarize the uploaded file(s)",
+          "description": "On many of the tasks, agents will help you... click on the button to see how",
+          "actionType": "command",
+          "command": "Some of the checklist items Look at the file(s) user has uploaded so far, look at time stamps, read the files, and give a quick short of types & content of the files."
+        }
+      ]
+    },
+    {
+      "id": "phase-agent-interaction",
+      "name": "Working with the Agent",
+      "description": "Use the agent to make real changes to files in this project",
+      "blocking": true,
+      "steps": [
+        {
+          "id": "create-meeting-notes",
+          "name": "Create a meeting notes template",
+          "description": "Ask the agent to create a reusable meeting notes file for you",
+          "actionType": "command",
+          "command": "Create a file called 'meeting-notes-template.md' with sections for Date, Attendees, Agenda, Discussion, and Action Items."
+        },
+        {
+          "id": "review-permission",
+          "name": "Review and approve the file change",
+          "description": "The agent needs your permission before creating or modifying files — review the change and approve it",
+          "actionType": "manual"
+        },
+        {
+          "id": "customize-template",
+          "name": "Customize the template to your needs",
+          "description": "Tell the agent what to change — e.g. 'Add a Decisions section' or 'Remove the Agenda section'",
+          "actionType": "command",
+          "command": "The user wants to customize the meeting notes template. Help them make changes based on their feedback."
+        },
+        {
+          "id": "decline-a-change",
+          "name": "Decline a change you don't want",
+          "description": "When the agent proposes a change, click Deny to reject it — the agent will ask what you'd prefer instead",
+          "actionType": "manual"
+        },
+        {
+          "id": "reference-and-ask",
+          "name": "Ask about an existing file",
+          "description": "Type @ in the chat to reference a file, then ask a question about it — e.g. '@meeting-notes-template.md how could I improve this?'",
+          "actionType": "manual"
+        },
+        {
+          "id": "share-screenshot",
+          "name": "Share a screenshot with the agent",
+          "description": "Paste or drag a screenshot into the chat — useful for showing the agent an error, a design, or something you want to discuss",
+          "actionType": "manual"
+        },
+        {
+          "id": "plan-a-task",
+          "name": "Have the agent plan before acting",
+          "description": "Ask the agent to organize your project files — it will propose a plan for you to review before making changes",
+          "actionType": "command",
+          "command": "Review the files in this project and propose a plan to organize them into a clean folder structure. Present the plan before making any changes."
+        },
+        {
+          "id": "try-approval-modes",
+          "name": "Explore approval modes",
+          "description": "Try switching between Ask-first, Auto-approve, and Plan-only in the permissions bar to see how each mode works",
+          "actionType": "manual"
+        }
+      ]
+    },
+    {
+      "id": "phase-file-browser",
+      "name": "Managing Files Directly",
+      "description": "Use the file browser to view and edit files yourself",
+      "steps": [
+        {
+          "id": "browse-files",
+          "name": "Browse your project files",
+          "description": "Open the file browser in the sidebar to see everything in this project",
+          "actionType": "manual"
+        },
+        {
+          "id": "edit-a-file",
+          "name": "Edit a file by hand",
+          "description": "Click on a file to open it, make a small change, and save — not everything needs the agent",
+          "actionType": "manual"
+        },
+        {
+          "id": "file-operations",
+          "name": "Rename or move a file",
+          "description": "Right-click a file in the browser to see available actions — try renaming one",
+          "actionType": "manual"
+        }
+      ]
+    }
+  ]
+}

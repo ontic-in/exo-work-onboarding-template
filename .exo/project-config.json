@@ -1,0 +1,4 @@
+{
+  "$schema": "https://exowork.dev/schemas/project-config.json",
+  "salesforceProject": false
+}
