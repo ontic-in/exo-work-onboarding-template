@@ -16,7 +16,7 @@
         },
         {
           "id": "expand-collapse",
-          "name": "Browse the stages below",
+          "name": "Explore stage expand-collapse",
           "description": "Click on the stage header above 'Getting Oriented' to collapse or expand it",
           "actionType": "manual"
         },
