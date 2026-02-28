@@ -6,33 +6,40 @@
       "id": "phase-checklist-basics",
       "name": "Getting Oriented",
       "description": "Familiarize yourself with the workspace and checklist",
-      "blocking": true,
+      "blocking": false,
       "steps": [
         {
           "id": "mark-complete",
-          "name": "Check off this task",
-          "description": "Click the circle to the left — this is how you track progress on any checklist",
+          "name": "Mark task in a checklist done, and then pending again",
+          "description": "Click the circle to the left couple of times — this is how you track progress on any checklist",
           "actionType": "manual"
         },
         {
           "id": "expand-collapse",
-          "name": "Explore stage expand-collapse",
-          "description": "Click on the stage header above 'Getting Oriented' to collapse or expand it",
+          "name": "Explore stage expand-collapse to see tasks underneath",
+          "description": "Click on 'Working with the Agents' header below, to see what's planned",
           "actionType": "manual"
         },
         {
           "id": "upload-brief",
-          "name": "Upload a sample document(s)",
-          "description": "Upload any file (agent can read Text, PDF, Images, screenshot, etc.)",
+          "name": "Upload document(s)",
+          "description": "Upload any file(s) (agent can read Text, PDF, Images, screenshot, etc.); and check-off this task",
           "actionType": "upload",
           "uploadPath": "uploads"
         },
         {
+          "id": "check-uploads-folder",
+          "name": "Explore files tab",
+          "description": "Click on the files tab on the left pane, select 'uploads' and you can click-through to see what you uploaded",
+          "actionType": "manual"
+        },
+        {
           "id": "summarize-file",
           "name": "Summarize the uploaded file(s)",
-          "description": "On many of the tasks, agents will help you... click on the button to see how",
+          "description": "ExoWork will help you on most of your tasks; click on the button to see how",
           "actionType": "command",
-          "command": "Some of the checklist items Look at the file(s) user has uploaded so far, look at time stamps, read the files, and give a quick short of types & content of the files."
+          "buttonLabel": "Summarize",
+          "command": "Look at the file(s) user has uploaded so far, look at time stamps, read the files, and give a quick stock of what you make of these files; and ask permission to mark this task as done."
         }
       ]
     },
@@ -47,6 +54,7 @@
           "name": "Create a meeting notes template",
           "description": "Ask the agent to create a reusable meeting notes file for you",
           "actionType": "command",
+          "buttonLabel": "Create",
           "command": "Create a file called 'meeting-notes-template.md' with sections for Date, Attendees, Agenda, Discussion, and Action Items."
         },
         {
@@ -60,6 +68,7 @@
           "name": "Customize the template to your needs",
           "description": "Tell the agent what to change — e.g. 'Add a Decisions section' or 'Remove the Agenda section'",
           "actionType": "command",
+          "buttonLabel": "Customize",
           "command": "The user wants to customize the meeting notes template. Help them make changes based on their feedback."
         },
         {
@@ -85,6 +94,7 @@
           "name": "Have the agent plan before acting",
           "description": "Ask the agent to organize your project files — it will propose a plan for you to review before making changes",
           "actionType": "command",
+          "buttonLabel": "Plan",
           "command": "Review the files in this project and propose a plan to organize them into a clean folder structure. Present the plan before making any changes."
         },
         {
