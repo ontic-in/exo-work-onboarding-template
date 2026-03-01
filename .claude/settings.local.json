@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__code-mode-exo-work__complete_step"
+    ]
+  }
+}
